@@ -1,0 +1,66 @@
+{
+    "policy": {
+        "name": "online-boutique-policy",
+        "template": { "name": "POLICY_TEMPLATE_NGINX_BASE" },
+        "enforcementMode": "blocking",
+        "blocking-settings": {
+            "violations": [
+                {
+                    "name": "VIOL_GRPC_METHOD",
+                    "alarm": true,
+                    "block": true
+                },
+                {
+                    "name": "VIOL_GRPC_MALFORMED",
+                    "alarm": true,
+                    "block": true
+                },
+                {
+                    "name": "VIOL_GRPC_FORMAT",
+                    "alarm": true,
+                    "block": true
+                },
+                {
+                    "name": "VIOL_URL",
+                    "alarm": true,
+                    "block": true
+                }
+            ]
+        },
+        "signature-sets": [
+            {
+                "name": "All Signatures",
+                "block": true,
+                "alarm": true
+            }
+        ],
+        "grpc-profiles": [
+            {
+                "name": "online-boutique-profile",
+                "idlFiles": [
+                    {
+                        "idlFile": {
+                            "$ref": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/master/pb/demo.proto"
+                        },
+                        "isPrimary": true
+                    }
+                ],
+                "associateUrls": true,
+                "defenseAttributes": {
+                    "maximumDataLength": 100,
+                    "allowUnknownFields": false
+                },
+                "attackSignaturesCheck": true,
+                "metacharCheck": true
+            }
+        ],
+        "urls": [
+            {
+                "name": "*",
+                "type": "wildcard",
+                "method": "*",
+                "$action": "delete"
+            }
+        ]
+    }
+}

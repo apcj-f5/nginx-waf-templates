@@ -1,0 +1,31 @@
+  {
+      "policy": {
+          "name": "bot_defense_policy",
+          "template": {
+              "name": "POLICY_TEMPLATE_NGINX_BASE"
+          },
+          "applicationLanguage": "utf-8",
+          "enforcementMode": "blocking",
+          "bot-defense": {
+              "settings": {
+                  "isEnabled": true
+              },
+              "mitigations": {
+                  "classes": [
+                      {
+                          "name": "trusted-bot",
+                          "action": "alarm"
+                      },
+                      {
+                          "name": "untrusted-bot",
+                          "action": "block"
+                      },
+                      {
+                          "name": "malicious-bot",
+                          "action": "block"
+                      }
+                  ]
+              }
+          }
+      }
+  }
