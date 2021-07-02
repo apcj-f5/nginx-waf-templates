@@ -1,1 +1,1 @@
-# nginx-waf-policy-templates
+Templates for use with NGINX App Protect
