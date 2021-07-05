@@ -1,0 +1,6 @@
+{
+ "mitigation_mode" : "standard",
+ "use_automation_tools_detection": "on",
+ "signatures" : "on",
+ "bad_actors" : "on"
+}
