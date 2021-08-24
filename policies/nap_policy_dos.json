@@ -1,6 +1,7 @@
 {
- "mitigation_mode" : "standard",
- "use_automation_tools_detection": "on",
- "signatures" : "on",
- "bad_actors" : "on"
+    "mitigation_mode" : "standard",
+    "signatures" : "on",
+    "bad_actors" : "on",
+    "use_automation_tools_detection": "on",
+    "tls_fingerprint" : "on"
 }
