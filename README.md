@@ -1,3 +1,13 @@
+<mark>*Templates and Config files for application security with NGINX App Protect*</mark>
+
+| NGINX App Protect                                                                                                            |
+|-                                                                                                                             |
+| - Bot Defence <br><br><br><br><br> [nginx.conf](configs/bot-nginx.conf) <br> [policy.json](policies/nap_policy_bot.json)     |
+
+| NGINX App Protect                                                                                                            |
+|-                                                                                                                             |
+| - L7 DoS <br><br><br><br><br> [nginx.conf](configs/dos-nginx.conf) <br> [policy.json](policies/nap_policy_dos.json)          |
+
 <mark>*Templates and Config files for advanced application security with NGINX App Protect*</mark>
 
 | NGINX App Protect                                                                                                            | NGINX App Protect + (Threat Campaigns, Bot Detection, L7 DoS)                                                                                                                          |
