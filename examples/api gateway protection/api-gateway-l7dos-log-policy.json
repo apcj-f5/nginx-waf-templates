@@ -1,0 +1,11 @@
+{
+    "filter": {
+        "traffic-mitigation-stats": "all",
+        "bad-actors": "top 10",
+        "attack-signatures": "top 10"
+    },
+    "content": {
+        "format": "arcsight",
+        "max_message_size": "5k"
+    }
+}

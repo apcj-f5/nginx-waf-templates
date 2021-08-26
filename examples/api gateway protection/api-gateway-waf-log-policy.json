@@ -1,0 +1,10 @@
+{
+    "filter": {
+        "request_type": "all"
+    },
+    "content": {
+        "format": "arcsight",
+        "max_request_size": "any",
+        "max_message_size": "5k"
+    }
+}
