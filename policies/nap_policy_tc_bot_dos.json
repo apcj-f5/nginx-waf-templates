@@ -1,6 +1,48 @@
 {
- "mitigation_mode" : "standard",
- "use_automation_tools_detection": "on",
- "signatures" : "on",
- "bad_actors" : "on"
+    "policy": {
+        "name": "comprehensive_policy",
+        "template": {
+            "name": "POLICY_TEMPLATE_NGINX_BASE"
+        },
+        "applicationLanguage": "utf-8",
+        "enforcementMode": "blocking",
+        "blocking-settings": {
+            "violations": [
+                {
+                    "name": "VIOL_THREAT_CAMPAIGN",
+                    "alarm": false,
+                    "block": false
+                }
+            ]
+        },
+        "signature-sets": [
+            {
+                "name": "High Accuracy Signatures",
+                "block": true,
+                "alarm": true
+            }
+        ],
+        "bot-defense": {
+        "settings": {
+            "isEnabled": true
+            },
+            "mitigations": {
+                "classes": [
+                    {
+                        "name": "trusted-bot",
+                        "action": "alarm"
+                    },
+                    {
+                        "name": "untrusted-bot",
+                        "action": "block"
+                    },
+                    {
+                        "name": "malicious-bot",
+                        "action": "block"
+                    }
+                ]
+            }
+        },
+    ]
+    }
 }
