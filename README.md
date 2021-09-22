@@ -9,7 +9,7 @@
 
 | NGINX App Protect + (Threat Campaigns, Bot Detection, L7 DoS)                                                                                                                          |
 |-                                                                                                                                                                                       |
-| - Signatures <br> - Threat Campaigns <br> - Bot Defence <br> - L7 DoS <br><br> [nginx.conf](configs/waf_tc_bot_dos-nginx.conf) <br> [policy.json](configs/nap_policy_tc_bot_dos.json)   |
+| - Signatures <br> - Threat Campaigns <br> - Bot Defence <br> - L7 DoS <br><br> [nginx.conf](configs/waf_tc_bot_dos-nginx.conf) <br> [policy.json](policies/nap_policy_tc_bot_dos.json)   |
 
 <br>
 <br>
