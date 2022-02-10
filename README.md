@@ -14,8 +14,4 @@
 <br>
 <br>
 
-<mark>*Templates and Config files for integrating Shape Security with NGINX App Protect*</mark>
 
-| NGINX App Protect + DeviceID+                                                                                                                    |
-|-                                                                                                                                                 |
-| - Signatures <br> - Device Identification <br><br><br> [nginx.conf](configs/waf-nginx.conf) <br> [policy.json](policies/nap_policy_waf.json)     |
