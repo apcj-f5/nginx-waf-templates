@@ -10,16 +10,16 @@
             "violations": [
                 {
                     "name": "VIOL_THREAT_CAMPAIGN",
-                    "alarm": false,
-                    "block": false
+                    "alarm": true,
+                    "block": true
                 }
             ]
         },
         "signature-sets": [
             {
                 "name": "High Accuracy Signatures",
-                "block": true,
-                "alarm": true
+                "block": false,
+                "alarm": false
             }
         ],
         "bot-defense": {
